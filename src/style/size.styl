@@ -1,0 +1,54 @@
+$size-per = range(5, 100, 5)
+for sizePer in $size-per
+  .h-per-{sizePer}
+    height (sizePer)%
+  .w-per-{sizePer}
+    width (sizePer)%
+
+$size-range = range(5, 600, 5)
+for sizeRange in $size-range
+  .h-{sizeRange}
+    height (sizeRange)px!important
+  .w-{sizeRange}
+    width (sizeRange)px!important
+  .l-h-{sizeRange}
+    line-height (sizeRange)px
+
+$size-px = 2,
+           3,
+           8,
+           22,
+           560,
+           660
+for sizePx in $size-px
+  .w-{sizePx}
+    width (sizePx)px
+  .h-{sizePx}
+    height (sizePx)px
+  .l-h-{sizePx}
+    line-height (sizePx)px
+
+.w-no
+  width 0!important
+.w-a
+  width 1200px!important
+  margin 0 auto
+.h-no
+  width 0!important
+.l-h-no
+  line-height 0!important
+
+.w-max-200
+  max-width: 200px!important
+
+.w-max-300
+  max-width: 300px!important
+
+.w-full
+  width 100%
+
+.h-full
+  height 100%
+
+.w-min-1300
+  min-width 1300px!important

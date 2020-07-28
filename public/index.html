@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>多语智能教学</title>
+    <script>
+      if(navigator.appVersion.indexOf('MSIE 9.0')>-1){
+        alert('请下载高版本浏览器，以获得更好浏览体验！')
+      };
+    </script>
+    <script src="./sdk/GenerateTestUserSig.js"></script>
+    <script src="./sdk/lib-generate-test-usersig.min.js"></script>
   </head>
   <body>
     <noscript>

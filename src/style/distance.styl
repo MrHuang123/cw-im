@@ -1,0 +1,129 @@
+$range = range(5, 100, 5)
+
+for range in $range
+  .p-t-{range}
+    padding-top (range)px
+  .p-b-{range}
+    padding-bottom (range)px
+  .p-l-{range}
+    padding-left (range)px
+  .p-r-{range}
+    padding-right (range)px
+  .p-lr-{range}
+    @extend .p-l-{range}
+    @extend .p-r-{range}
+  .p-tb-{range}
+    @extend .p-t-{range}
+    @extend .p-b-{range}
+  .p-{range}
+    @extend .p-l-{range}
+    @extend .p-r-{range}
+    @extend .p-t-{range}
+    @extend .p-b-{range}
+  .m-t-{range}
+    margin-top (range)px
+  .m-b-{range} 
+    margin-bottom (range)px
+  .m-l-{range}
+    margin-left (range)px
+  .m-r-{range}
+    margin-right (range)px
+  .m-lr-{range}
+    @extend .m-l-{range}
+    @extend .m-r-{range}
+  .m-tb-{range}
+    @extend .m-t-{range}
+    @extend .m-b-{range}
+  .m-{range}
+    @extend .m-l-{range}
+    @extend .m-r-{range}
+    @extend .m-t-{range}
+    @extend .m-b-{range}
+
+$other = 2,
+         6,
+         8,
+         12,
+         24,
+         120,
+         430
+
+for other in $other
+  .p-t-{other}
+    padding-top (other)px
+  .p-b-{other}
+    padding-bottom (other)px
+  .p-l-{other}
+    padding-left (other)px
+  .p-r-{other}
+    padding-right (other)px
+  .p-lr-{other}
+    @extend .p-l-{other}
+    @extend .p-r-{other}
+  .p-tb-{other}
+    @extend .p-t-{other}
+    @extend .p-b-{other}
+  .p-{other}
+    @extend .p-l-{other}
+    @extend .p-r-{other}
+    @extend .p-t-{other}
+    @extend .p-b-{other}
+  .m-t-{other}
+    margin-top (other)px
+  .m-b-{other} 
+    margin-bottom (other)px
+  .m-l-{other}
+    margin-left (other)px
+  .m-r-{other}
+    margin-right (other)px
+  .m-lr-{other}
+    @extend .m-l-{other}
+    @extend .m-r-{other}
+  .m-tb-{other}
+    @extend .m-t-{other}
+    @extend .m-b-{other}
+  .m-{other}
+    @extend .m-l-{other}
+    @extend .m-r-{other}
+    @extend .m-t-{other}
+    @extend .m-b-{other}
+
+.m-c,.m-a
+  width 1200px
+  margin 0 auto
+
+.m-no-t
+  margin-top 0!important
+.m-no-b
+  margin-bottom 0!important
+.m-no-l
+  margin-left 0!important
+.m-no-r
+  margin-right 0!important
+.m-no-tb
+  @extend .m-no-t
+  @extend .m-no-b
+.m-no-lr
+  @extend .m-no-l
+  @extend .m-no-r
+.m-no
+  @extend .m-no-tb
+  @extend .m-no-lr
+
+.p-no-t
+  padding-top 0!important
+.p-no-b
+  padding-bottom 0!important
+.p-no-l
+  padding-left 0!important
+.p-no-r
+  padding-right: 0!important
+.p-no-tb
+  @extend .p-no-t
+  @extend .p-no-b
+.p-no-lr
+  @extend .p-no-l
+  @extend .p-no-r
+.p-no
+  @extend .p-no-lr
+  @extend .p-no-tb
